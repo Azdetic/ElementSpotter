@@ -63,5 +63,15 @@
     "prettier": "^3.9.1",
     "tailwindcss": "^3.4.19",
     "typescript": "^6.0.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@swc/core",
+      "esbuild",
+      "lmdb",
+      "msgpackr-extract",
+      "sharp"
+    ]
   }
 }

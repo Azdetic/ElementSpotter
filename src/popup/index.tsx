@@ -95,7 +95,9 @@ function IndexPopup() {
           try {
             const domain = new URL(url).hostname;
             setCurrentDomain(domain);
-          } catch (e) {}
+          } catch (e) {
+            console.error('Failed to parse URL', e);
+          }
         }
       });
     }

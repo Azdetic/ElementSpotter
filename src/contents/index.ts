@@ -92,8 +92,8 @@ Promise.all([
   storage.get('highlightColor'),
   storage.get('hotkey'),
 ]).then(([m, l, active, color, hk]) => {
-  if (m !== undefined) runMode = m as any;
-  if (l !== undefined) siteList = l as any;
+  if (m !== undefined) runMode = m as 'all' | 'specific';
+  if (l !== undefined) siteList = l as string[];
   if (active !== undefined) isSpottingActive = active as boolean;
   if (color !== undefined) {
     const colorStr = color as string;
@@ -241,9 +241,9 @@ window.addEventListener(
         // Reset overlay to current user color
         if (currentColor) {
           overlay.style.borderColor = currentColor;
-          let r = parseInt(currentColor.slice(1, 3), 16);
-          let g = parseInt(currentColor.slice(3, 5), 16);
-          let b = parseInt(currentColor.slice(5, 7), 16);
+          const r = parseInt(currentColor.slice(1, 3), 16);
+          const g = parseInt(currentColor.slice(3, 5), 16);
+          const b = parseInt(currentColor.slice(5, 7), 16);
           if (!isNaN(r) && !isNaN(g) && !isNaN(b)) {
             overlay.style.backgroundColor = `rgba(${r}, ${g}, ${b}, 0.2)`;
           }

@@ -41,3 +41,7 @@ yarn-error.log*
 
 # Test coverage
 coverage/
+
+# Screenshots
+Screenshot*.png
+store_screenshot_*.jpg

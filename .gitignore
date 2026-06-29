@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Build output
+build/
+.plasmo/
+
+# Plasmo generated artifacts in root
+/manifest.json
+/popup.html
+/options.html
+/*.plasmo.*.png
+/popup.*.js
+/popup.*.css
+/options.*.js
+/contents.*.js
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor (keep .vscode/settings.json committed)
+.vscode/*.code-workspace
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test coverage
+coverage/

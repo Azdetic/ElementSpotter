@@ -26,17 +26,8 @@
   },
   "author": "Azdetic",
   "license": "ISC",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^11.6.0",
-      "onFail": "download"
-    }
-  },
   "manifest": {
     "permissions": [
-      "activeTab",
-      "tabs",
       "storage"
     ]
   },
